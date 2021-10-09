@@ -30,7 +30,7 @@
 }
 
 .headerButton {
-    
+    cursor: pointer;
     width: 19.375rem;
     height: 7.5rem;
     background-color: white;
@@ -65,11 +65,14 @@ h1 {
     text-align: center;
 }
 
+li {
+    cursor: pointer;
+}
 .headerMenu {
     display: flex;
     flex-direction: column;
     margin-right: 8.875rem;
-}
+ }
 
 .menuSmall {
     display: flex;
