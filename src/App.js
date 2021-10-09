@@ -1,14 +1,14 @@
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Home from './components/Home';
 import HomeHeader from './components/HomeHeader';
+
 
 function App() {
   return (
     <Router>
-        <div>
+        <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/HomeHeader" component={HomeHeader} />
-        </div>
+        </Switch>
     </Router>
   );
 }
