@@ -1,0 +1,53 @@
+.threeColumns {
+    height: 21.75rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: $color-gold;
+}
+
+.threeColumnsArticle {
+    display: flex;
+    flex-direction: column;
+    height: 15.75rem;
+    margin-top: 2.875rem;
+    margin-bottom: 5.375rem;
+    margin-bottom: 10.188rem;
+    text-align: center;
+        h2 {
+            margin-top: 0;
+            color: $color-brown;
+            font-size: 5.625rem;
+            text-align: center;
+            font-family: $font-base;
+            font-weight: 300;
+            opacity: 1;
+            letter-spacing: 0;
+            margin-bottom: 0.625rem;
+        }
+        
+        h3 {
+            color: $color-black;
+            opacity: 1;
+            text-align: center;
+            font-family: $font-base;
+            font-weight: 300;
+            font-size: 1.125rem;
+            text-transform: uppercase;
+            margin-bottom: 1.75rem;
+            margin-top: 0;
+        }
+
+        p {
+            display: block;
+            width:20.875rem;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 300;
+            font-family: $font-alternative;
+            letter-spacing: -0.32px;
+            color: $color-black;
+            opacity: 1;
+            margin-top: 0;
+        }
+}
