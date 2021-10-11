@@ -27,9 +27,12 @@
 .headerButtonBox {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .headerButton {
+    display: flex;
+    align-items: center;
     cursor: pointer;
     width: 19.375rem;
     height: 7.5rem;

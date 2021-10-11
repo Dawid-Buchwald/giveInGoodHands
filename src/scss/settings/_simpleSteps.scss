@@ -27,3 +27,83 @@
             padding: 0;
         }
 }
+
+.simpleStepsFourColumns {
+    height: 20.313rem;
+    background-color: $color-dirty-white;
+    display: flex;
+    justify-content: space-evenly;;
+    margin-top: 2.563rem;
+
+        .simpleStepsSection {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            max-width: 8.85rem;
+        }
+            h4 {
+                font-size: 1.125rem;
+                color: $color-black;
+                opacity: 1;
+                letter-spacing: 0;
+                font-family: $font-base;
+                margin: 0.656rem 0 0 0;
+                font-weight: 300;
+            }
+
+            p {
+                font-size: 1rem;
+                color: $color-black;
+                font-family: $font-base;
+                font-weight: 300;
+                opacity: 1;
+                margin: 0
+            }
+
+        .separatingLine {
+            border-top: 1px solid $color-light-grey;
+            width: 4.375rem;
+            opacity: 1;
+            margin: 0.656rem 0;
+            padding: 0;
+        }
+}
+
+.simpleStepsLink {
+    height: 9.688rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.188rem;
+    margin-bottom: 5rem;
+
+    section {
+        border: 0.75px solid $color-black;
+        width: 19.375rem;
+        height: 7.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 124px;
+            font-size: 2.25rem;
+            color: $color-black;
+            text-align: center;
+            font-weight: 300;
+            font-family: $font-base;
+            letter-spacing: 0;
+            opacity: 1;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}
