@@ -42,7 +42,7 @@ const HomeSimpleSteps = () => {
                 </div>
                 <div className="simpleStepsLink">
                     <section>
-                        <a href="#">oddaj rzeczy</a>
+                        <a href="logowanie">oddaj rzeczy</a>
                     </section>
                 </div>
             </div>

@@ -1,12 +1,18 @@
 import React from 'react';
+import {Link } from 'react-scroll';
+import { useHistory } from 'react-router';
+
 
 const headerImg = require("../assets/Home-Hero-Image.jpg").default;
 const decoration = require("../assets/Decoration.svg").default;
 
 const HomeHeader = () => {
+
+        let history = useHistory();
+
     return (
         <>
-           <container className="header">
+           <container id="home" className="header">
                 <div>
                     <img className="headerImage" src={headerImg} alt="box with some stuff"></img>
                 </div>
@@ -14,15 +20,15 @@ const HomeHeader = () => {
                     <div className="headerMenu">
                         <div>
                         <ul className="menuSmall">
-                            <li className="signIn">Zaloguj</li>
-                            <li className="signUp">Załóż konto</li>
+                            <li className="signIn"><a href="logowanie">Zaloguj</a></li>
+                            <li className="signUp"><a href="rejestracja">Załóż konto</a></li>
                         </ul>
                     </div>
                     <div>
                         <ul className="menuBig">
-                            <li className="headerMenuBigStart">Start</li>
-                            <li>O co chodzi?</li>
-                            <li>O nas</li>
+                            <li className="headerMenuBigStart"><Link to="home" smooth={true}>Start</Link></li>
+                            <li><Link to="what'sGoingOn" smooth={true}>O co chodzi?</Link></li>
+                            <li><Link to="about" smooth={true} >O nas</Link></li>
                             <li>Fundacje i organizacje</li>
                             <li>Kontakt</li>
                         </ul>
@@ -34,8 +40,8 @@ const HomeHeader = () => {
                         </h1>
                         <img className="headerDecoration" src={decoration}></img>
                         <div className="headerButtonBox">
-                            <button className="headerButton headerButtonText">oddaj rzeczy</button>
-                            <button className="headerButton">zorganizuj zbiórkę</button>
+                            <button onClick={() => {history.push('/logowanie')}} className="headerButton headerButtonText">oddaj rzeczy</button>
+                            <button onClick={() => {history.push('/logowanie')}} className="headerButton">zorganizuj zbiórkę</button>
                         </div>
                     </div>
                 </div>

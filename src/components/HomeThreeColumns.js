@@ -5,7 +5,7 @@ import React from 'react';
 const HomeThreeColumns = () => {
     return (
         <>
-           <div className="threeColumns">
+           <div  id="what'sGoingOn"  className="threeColumns">
                 <div className="threeColumnsArticle">
                     <h2>10</h2>
                     <h3>oddanych worków</h3>
