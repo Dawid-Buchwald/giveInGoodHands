@@ -26,7 +26,7 @@ const HomeHeader = () => {
                     </div>
                     <div>
                         <ul className="menuBig">
-                            <li className="headerMenuBigStart"><Link to="home" smooth={true}>Start</Link></li>
+                            <li className="headerMenuBigStart"><a href="/">Start</a></li>
                             <li><Link to="what'sGoingOn" smooth={true}>O co chodzi?</Link></li>
                             <li><Link to="about" smooth={true} >O nas</Link></li>
                             <li>Fundacje i organizacje</li>
