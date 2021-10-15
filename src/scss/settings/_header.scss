@@ -99,7 +99,7 @@ li {
 .signIn {
     font-size: 0.875rem;
     padding: 0.625rem 0.563rem;
-
+    border: 1px solid $color-white;
         a {
             text-decoration: none;
             font-family: $font-base;
@@ -112,6 +112,7 @@ li {
     border: 0.75px solid $color-gold;
     text-align: center;
     padding: 0.625rem 0.563rem;
+
 
     a {
         text-decoration: none;
@@ -135,6 +136,11 @@ li {
     letter-spacing: 0;
     font-family: $font-base;
     font-weight: 300;
+
+        li {
+            border: 0.75px solid $color-white;
+            padding: 0.563rem 1.25rem;
+        }
 }
 
 .headerMenuBigStart {
@@ -143,4 +149,17 @@ li {
         a {
             text-decoration: none;
         }
+}
+
+.signUp:hover {
+    
+        background-color: $color-gold;
+}
+.signIn:hover {
+    border: 1px solid $color-gold;
+}
+
+.menuBig>li:hover {
+        border: 0.75px solid $color-black;
+        padding: 0.563rem 1.25rem;
 }
