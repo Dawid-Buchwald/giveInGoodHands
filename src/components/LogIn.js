@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useHistory } from 'react-router';
-import {Link} from 'react-scroll'
+import Validation from './Validation';
 
 const decoration = require("../assets/Decoration.svg").default;
 
@@ -9,6 +9,25 @@ const decoration = require("../assets/Decoration.svg").default;
 const LogIn = () => {
 
     let history = useHistory();
+
+    const [values, setValues] = useState ({
+        email: "",
+        password: "",
+    })
+
+    const [errors, setErrors] = useState({});
+
+    const handleChange = (event) => {
+        setValues({
+            ...values,
+            [event.target.name]: event.target.value,
+        });
+    }
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        setErrors(Validation(values));
+    };
 
     return (
         <>
@@ -39,13 +58,25 @@ const LogIn = () => {
                                 <div className="logInFormInputSingle">
                                     <label>
                                         <p>Email</p>
-                                        <input type="email"></input>
+                                        <input 
+                                            type="email" 
+                                            name="email" 
+                                            value={values.email}
+                                            onChange={handleChange}
+                                        />
+                                        {errors.email && <p className="error">{errors.email}</p>}
                                     </label>
                                 </div>
                                 <div className="logInFormInputSingle">
                                     <label>
                                         <p>Hasło</p>
-                                        <input type="password"></input>
+                                        <input 
+                                            type="password" 
+                                            name="password" 
+                                            value={values.password}
+                                            onChange={handleChange} 
+                                        />
+                                        {errors.password && <p className="error">{errors.password}</p>}
                                     </label>
                                 </div>
                             </div>
@@ -53,7 +84,7 @@ const LogIn = () => {
                         </form>
                         <div className="buttonBox">
                                 <button  onClick={() => {history.push('/rejestracja')}}>Załóż konto</button>
-                                <button>Zaloguj się</button>
+                                <button onClick={handleFormSubmit}>Zaloguj się</button>
                          </div>
                     </div>
                 </div>

@@ -38,6 +38,13 @@
             height: 1.375rem;
         }
 
+        p.error {
+            font-size: 0.75rem;
+            color: red;
+            width: 15.625rem;
+            height: 3.875rem;
+        }
+
         .logInFormInputSingle{
             width: 15.625rem;
             height: 3.875rem;
@@ -85,3 +92,4 @@ button:hover {
 .logInFormInput {
     padding: 0.938rem 4.203rem ;
 }
+
