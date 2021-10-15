@@ -30,20 +30,26 @@ const SignUp = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="logInForm">
-                        <h2>Zaloguj się</h2>
+                    <div className="homeSignUp">
+                        <h2>Załóż konto</h2>
                         <img className="headerDecoration" src={decoration}></img>
                         <form>
-                            <div className="logInFormInput">
-                                <div className="logInFormInputSingle">
+                            <div className="signUpForm">
+                                <div className="signUpFormInputSingle">
                                     <label>
                                         <p>Email</p>
                                         <input type="email"></input>
                                     </label>
                                 </div>
-                                <div className="logInFormInputSingle">
+                                <div className="signUpFormInputSingle">
                                     <label>
                                         <p>Hasło</p>
+                                        <input type="password"></input>
+                                    </label>
+                                </div>
+                                <div className="signUpFormInputSingle">
+                                    <label>
+                                        <p>Powtórz hasło</p>
                                         <input type="password"></input>
                                     </label>
                                 </div>
@@ -51,8 +57,8 @@ const SignUp = () => {
                             
                         </form>
                         <div className="buttonBox">
-                                <button  onClick={() => {history.push('/rejestracja')}}>Załóż konto</button>
-                                <button>Zaloguj się</button>
+                                <button  onClick={() => {history.push('/logowanie')}}>Zaloguj się</button>
+                                <button>Załóż konto</button>
                          </div>
                     </div>
                 </div>

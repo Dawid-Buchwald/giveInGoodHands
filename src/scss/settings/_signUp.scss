@@ -1,0 +1,58 @@
+.homeSignUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+        h2 {
+            font-size: 2.5rem;
+            font-family: $font-base;
+            font-weight: 300;
+            text-align: center;
+            color: $color-black;
+            letter-spacing: -0.8px;
+            opacity: 1;
+            margin-top: 7.688rem;
+            margin-bottom: 1.563rem;
+        }
+
+        img {
+            padding: 0;
+            margin-bottom: 3.75rem;
+        }
+
+        form {
+            width: 24rem;
+            height: 20.5rem;
+            background-color: $color-dirty-white;
+
+            p {
+                font-size: 1rem;
+                color: $color-black;
+                font-weight: 600;
+                font-family: $font-base;
+                opacity:1 ;
+            }
+
+            input {
+                width:15.625rem;
+                background-color: $color-dirty-white;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 1px solid $color-light-grey;
+            }
+        }
+}
+
+
+.signUpForm {
+    padding: 0.938rem 4.203rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.signUpFormInputSingle {
+    width: 15.625rem;
+    height: 3.75rem;
+}
