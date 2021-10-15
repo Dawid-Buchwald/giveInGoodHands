@@ -148,6 +148,7 @@ li {
     padding: 0.563rem 1.25rem;
         a {
             text-decoration: none;
+            color: $color-grey;
         }
 }
 
@@ -162,4 +163,5 @@ li {
 .menuBig>li:hover {
         border: 0.75px solid $color-black;
         padding: 0.563rem 1.25rem;
+        text-decoration: none;
 }
