@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 const decoration = require("../assets/Decoration.svg").default;
 
@@ -6,6 +7,7 @@ const decoration = require("../assets/Decoration.svg").default;
 
 const SignUp = () => {
 
+    let history = useHistory();
 
     return (
         <>
@@ -29,7 +31,7 @@ const SignUp = () => {
             <div className="logOut">
                  <h1>Wylogowanie nastąpiło pomyślnie!</h1>
                  <img className="headerDecoration" src={decoration}></img>
-                 <button>Strona główna</button>
+                 <button onClick={() => {history.push('/')}}>Strona główna</button>
             </div>          
         </>
     );
