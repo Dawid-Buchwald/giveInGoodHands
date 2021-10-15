@@ -30,7 +30,7 @@ const HomeHeader = () => {
                             <li><Link to="what'sGoingOn" smooth={true}>O co chodzi?</Link></li>
                             <li><Link to="about" smooth={true} >O nas</Link></li>
                             <li>Fundacje i organizacje</li>
-                            <li>Kontakt</li>
+                            <li><Link to="contact" smooth={true}>Kontakt</Link></li>
                         </ul>
                         </div>
                     </div>

@@ -1,0 +1,90 @@
+.contact {
+    width: 118.75rem;
+    height: 64.125rem;
+    background-image: url(../../assets/Background-Contact-Form.jpg);
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    &::before {
+        background-color:rgba(255,255,255,0.5);
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        }
+}
+
+.contactForm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+     h2{
+         width: 22.375rem ;
+         height: 3.25rem;
+         font-size: 2.375rem;
+         text-align: center;
+         font-weight: 300;
+         font-family: $font-base;
+         letter-spacing: -0.76px;
+         color: $color-black;
+         opacity: 1;
+         margin-bottom: 1.875rem;
+     }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 33rem;
+    height: 20.438rem;
+
+    input {
+        width: 16rem;
+        text-decoration: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid $color-light-grey;
+        background-color: rgba(255,255,255,0.0);
+    }
+        .singleInput{
+            width: 16rem;
+            height: 3.875rem;
+           
+        }
+
+        .singleInputFirst {
+            margin-right: 1rem;
+        }
+        textarea {
+            resize: none;
+            width: 33rem;
+            height: 6.063rem;
+        }
+}
+
+.contactFormInput {
+    display: flex;
+    align-content: space-between;
+}
+// footer {
+//     position: relative;
+//         display: flex;
+//         align-items: flex-start;
+//         justify-content: flex-start;
+//         p{
+//             font-size:1.125rem;
+//             color: $color-black;
+//             font-weight: 300;
+//             font-family: $font-base;
+//             opacity: 1;
+//             text-align: center;
+//         }
+// }

@@ -6,6 +6,7 @@ import HomeThreeColumns from './components/HomeThreeColumns';
 import LogIn from './components/LogIn';
 import SignUp from './components/SignUp';
 import LogOut from './components/LogOut';
+import HomeContact from './components/HomeContact';
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/o co chodzi" component={HomeThreeColumns} />
           <Route exact path="/o nas" component={HomeAbout} />
+          <Route exact path="/kontakt" component={HomeContact} />
         </Switch>
     </Router>
   );
