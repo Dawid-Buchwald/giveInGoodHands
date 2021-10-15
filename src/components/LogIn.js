@@ -70,7 +70,7 @@ const LogIn = () => {
                                 <div className="logInFormInputSingle">
                                     <label>
                                         <p>Hasło</p>
-                                        <input 
+                                        <input className="error"
                                             type="password" 
                                             name="password" 
                                             value={values.password}

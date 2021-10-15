@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useHistory } from 'react-router';
+import Validation from './Validation';
 
 const decoration = require("../assets/Decoration.svg").default;
 
@@ -8,6 +9,27 @@ const decoration = require("../assets/Decoration.svg").default;
 const SignUp = () => {
 
     let history = useHistory();
+
+    const [values, setValues] = useState ({
+        email: "",
+        password: "",
+        password2: "",
+    })
+
+    const [errors, setErrors] = useState({});
+
+    const handleChange = (event) => {
+        setValues({
+            ...values,
+            [event.target.name]: event.target.value,
+        });
+    }
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        setErrors(Validation(values));
+    };
+
 
     return (
         <>
@@ -38,19 +60,37 @@ const SignUp = () => {
                                 <div className="signUpFormInputSingle">
                                     <label>
                                         <p>Email</p>
-                                        <input type="email"></input>
+                                        <input
+                                            type="email" 
+                                            name="email"
+                                            value={values.email}
+                                            onChange={handleChange}
+                                        />
+                                        {errors.email && <p className="error">{errors.email}</p>}
                                     </label>
                                 </div>
                                 <div className="signUpFormInputSingle">
                                     <label>
                                         <p>Hasło</p>
-                                        <input type="password"></input>
+                                        <input 
+                                            type="password"
+                                            name="password"
+                                            value={values.password}
+                                            onChange={handleChange} 
+                                        />
+                                        {errors.password && <p className="error">{errors.password}</p>}
                                     </label>
                                 </div>
                                 <div className="signUpFormInputSingle">
                                     <label>
                                         <p>Powtórz hasło</p>
-                                        <input type="password"></input>
+                                        <input 
+                                            type="password"
+                                            name="password2"
+                                            value={values.password2}
+                                            onChange={handleChange}
+                                        />
+                                        {errors.password2 && <p className="error">{errors.password2}</p>}
                                     </label>
                                 </div>
                             </div>
@@ -58,7 +98,7 @@ const SignUp = () => {
                         </form>
                         <div className="buttonBox">
                                 <button  onClick={() => {history.push('/logowanie')}}>Zaloguj się</button>
-                                <button>Załóż konto</button>
+                                <button  onClick={handleFormSubmit}>Załóż konto</button>
                          </div>
                     </div>
                 </div>

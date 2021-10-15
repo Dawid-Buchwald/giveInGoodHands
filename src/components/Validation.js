@@ -14,6 +14,15 @@ const Validation = (values) => {
         errors.password="Podane hasło jest za krótkie!"
     }
 
+    if(!values.password2){
+        errors.password2="Powtórz hasło"
+    } else if(values.password2.length < 6){
+        errors.password2="Podane hasło jest za krótkie!"
+    } else if(values.password2!== values.password || values.password2.length !== values.password.length){
+        errors.password2="Hasła muszą być takie same!"
+    }
+
+
     return errors;
 }
 

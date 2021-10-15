@@ -34,6 +34,13 @@
                 opacity:1 ;
             }
 
+            p.error {
+                font-size: 0.75rem;
+                color: red;
+                width: 15.625rem;
+                height: 3.875rem;
+            }
+
             input {
                 width:15.625rem;
                 background-color: $color-dirty-white;
@@ -55,4 +62,5 @@
 .signUpFormInputSingle {
     width: 15.625rem;
     height: 3.75rem;
+    margin-top: 20px;
 }
