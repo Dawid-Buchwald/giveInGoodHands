@@ -34,22 +34,25 @@ const HomeContact = () => {
                         />
                     </label>
                     </div>
-                    <label>
+                    <label className="contactFormTextarea">
                         <p>Wpisz swoją wiadomość</p>
                         <textarea
                             placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                         >
-
                         </textarea>
                     </label>
+                    <button>Wyślij</button>
                 </form>
+                
               </div>
-              {/* <footer>
+            </div>
+            <footer className="footer">
                   <p>Copyright by Coders Lab</p>
-                  <img src={facebookIcon}></img>
-                  <img src={instagramIcon}></img>
-              </footer> */}
-          </div>
+                  <div className="footerIconBox">
+                    <img src={facebookIcon}></img>
+                    <img src={instagramIcon}></img>
+                  </div>
+                </footer>
         </>
     );
 };

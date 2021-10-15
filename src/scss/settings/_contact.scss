@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     position: relative;
     &::before {
-        background-color:rgba(255,255,255,0.5);
+        background-color:rgba(255,255,255,0.75);
         content: "";
         height: 100%;
         width: 100%;
@@ -24,6 +24,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    float: right;
+    margin-top: 12.5rem;
+    margin-right: 8.875rem;
 
      h2{
          width: 22.375rem ;
@@ -44,6 +47,32 @@ form {
     flex-direction: column;
     width: 33rem;
     height: 20.438rem;
+    margin-top: 4.375rem;
+
+    button {
+        width: 9.375rem;
+        height: 3.125rem;
+        text-decoration: none;
+        background-color: rgba(255,255,255,0.0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-end;
+        border: 0.75px solid $color-black;
+        opacity: 1;
+        font-size: 1.125rem;
+        color: #000000;
+        font-weight: 300;
+        font-family: $font-base;
+        padding: 0;
+        margin:0.625rem 0;
+    }
+    p {
+        font-size: 1rem;
+        color: $color-black;
+        font-weight: 600;
+        font-family: $font-base;
+    }
 
     input {
         width: 16rem;
@@ -53,6 +82,13 @@ form {
         border-right: none;
         border-bottom: 1px solid $color-light-grey;
         background-color: rgba(255,255,255,0.0);
+
+            & {
+                font-size: 18px;
+                color: $color-black;
+                font-family: $font-base;
+                font-weight: 300;
+            }
     }
         .singleInput{
             width: 16rem;
@@ -67,24 +103,55 @@ form {
             resize: none;
             width: 33rem;
             height: 6.063rem;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid $color-light-grey;
+            background-color: rgba(255,255,255,0.0);
+
+                & {
+                font-size: 18px;
+                color: $color-black;
+                font-family: $font-base;
+                font-weight: 300;
+                text-align: left;
+                }
         }
-}
+    }
+        
+
+
+
 
 .contactFormInput {
     display: flex;
     align-content: space-between;
 }
-// footer {
-//     position: relative;
-//         display: flex;
-//         align-items: flex-start;
-//         justify-content: flex-start;
-//         p{
-//             font-size:1.125rem;
-//             color: $color-black;
-//             font-weight: 300;
-//             font-family: $font-base;
-//             opacity: 1;
-//             text-align: center;
-//         }
-// }
+
+.contactFormTextarea {
+    margin-top: 2.5rem;
+}
+
+textarea::placeholder, input::placeholder {
+    color: #3C3C3C26;
+}
+
+.footer {
+    width: 59.375rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    transform: translate(825px, -50px);
+
+        p {
+            font-size: 1.125rem;
+            font-family: $font-base;
+            font-weight: 300;
+            color: $color-black;
+            opacity: 1;
+        }
+}
+
+.footerIconBox {
+    width: 5rem;
+}
