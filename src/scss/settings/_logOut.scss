@@ -1,0 +1,44 @@
+.logOut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+        h1 {
+            width: 25.875rem;
+            height: 6.875rem;
+            font-size: 2.5rem;
+            text-align: center;
+            color: $color-black;
+            letter-spacing: -0.8px;
+            opacity: 1;
+            margin-top: 7.688rem;
+            margin-bottom: 1.938rem;
+        }
+
+        img {
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        button {
+            text-decoration: none;
+            border: none;
+            background-color: $color-white;
+            font-size: 1.125rem;
+            color: #000000;
+            font-family: $font-base;
+            font-weight: 300;
+            margin-top: 2.5rem;
+            border: 0.75px solid $color-white;
+            padding: 0.938rem;
+            text-align: center;
+        }
+}
+
+button:hover {
+
+    border: 0.75px solid $color-black;
+    cursor: pointer;
+
+}

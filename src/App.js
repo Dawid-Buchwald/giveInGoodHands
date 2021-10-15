@@ -5,6 +5,7 @@ import HomeSimpleSteps from './components/HomeSimpleSteps';
 import HomeThreeColumns from './components/HomeThreeColumns';
 import LogIn from './components/LogIn';
 import SignUp from './components/SignUp';
+import LogOut from './components/LogOut';
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/logowanie" component={LogIn} />
           <Route exact path="/rejestracja" component={SignUp} />
+          <Route exact path="/wylogowano" component={LogOut} />
           <Route exact path="/" component={Home} />
           <Route exact path="/o co chodzi" component={HomeThreeColumns} />
           <Route exact path="/o nas" component={HomeAbout} />
