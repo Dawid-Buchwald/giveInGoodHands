@@ -1,7 +1,6 @@
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home';
 import HomeAbout from './components/HomeAbout';
-import HomeSimpleSteps from './components/HomeSimpleSteps';
 import HomeThreeColumns from './components/HomeThreeColumns';
 import LogIn from './components/LogIn';
 import SignUp from './components/SignUp';

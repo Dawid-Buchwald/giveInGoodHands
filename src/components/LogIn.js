@@ -52,7 +52,7 @@ const LogIn = () => {
                     </div>
                     <div className="logInForm">
                         <h2>Zaloguj się</h2>
-                        <img className="headerDecoration" src={decoration}></img>
+                        <img className="headerDecoration" src={decoration} alt=""></img>
                         <form>
                             <div className="logInFormInput">
                                 <div className="logInFormInputSingle">

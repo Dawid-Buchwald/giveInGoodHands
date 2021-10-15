@@ -9,9 +9,9 @@ const HomeAbout = () => {
           <div className="homeAbout">
               <section id="about" className="homeAboutSection">
                   <h5>O nas</h5>
-                  <img src={decoration}></img>
+                  <img src={decoration} alt=""></img>
                   <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-                  <img className="signature" src={signature}></img>                
+                  <img className="signature" src={signature} alt=""></img>                
               </section>
               <section className="peopleImage">
 

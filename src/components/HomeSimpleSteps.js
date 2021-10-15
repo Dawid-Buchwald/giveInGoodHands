@@ -12,29 +12,29 @@ const HomeSimpleSteps = () => {
             <div className="simpleSteps">
                 <div className="simpleStepsHeader">
                     <p>Wystarczą 4 proste kroki</p>
-                    <img className="headerDecoration" src={decoration}></img>
+                    <img className="headerDecoration" src={decoration} alt=""></img>
                 </div>
                 <div className="simpleStepsFourColumns">
                     <section className="simpleStepsSection">
-                        <img src={shirtIcon}></img>
+                        <img src={shirtIcon} alt="ikona bluzki"></img>
                         <h4>Wybierz rzeczy</h4>
                         <div className="separatingLine"></div>
                         <p>ubrania, zabawki, sprzęt i inne</p>
                     </section>
                     <section className="simpleStepsSection">
-                        <img src={bagIcon}></img>
+                        <img src={bagIcon} alt="ikona torba"></img>
                         <h4>Spakuj je</h4>
                         <div className="separatingLine"></div>
                         <p>skorzystaj z worków na śmieci</p>
                     </section>
                     <section className="simpleStepsSection">
-                        <img src={magnifierIcon}></img>
+                        <img src={magnifierIcon} alt="ikona lupa"></img>
                         <h4>Zdecyduj komu chcesz pomóc</h4>
                         <div className="separatingLine"></div>
                         <p>wybierz zaufane miejsce</p>
                     </section>
                     <section className="simpleStepsSection">
-                        <img src={arrowIcon}></img>
+                        <img src={arrowIcon} alt="ikona strzałka"></img>
                         <h4>Zamów kuriera</h4>
                         <div className="separatingLine"></div>
                         <p>kuerier przyjedzie w dogodnym terminie</p>

@@ -30,7 +30,7 @@ const SignUp = () => {
             </div>
             <div className="logOut">
                  <h1>Wylogowanie nastąpiło pomyślnie!</h1>
-                 <img className="headerDecoration" src={decoration}></img>
+                 <img className="headerDecoration" src={decoration} alt=""></img>
                  <button onClick={() => {history.push('/')}}>Strona główna</button>
             </div>          
         </>

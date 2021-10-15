@@ -1,5 +1,4 @@
 import React from 'react';
-import { useHistory } from 'react-router';
 
 const decoration = require("../assets/Decoration.svg").default;
 const facebookIcon = require("../assets/Facebook.svg").default;
@@ -8,14 +7,13 @@ const instagramIcon = require("../assets/Instagram.svg").default;
 
 const HomeContact = () => {
 
-    let history = useHistory();
 
     return (
         <>
           <div id="contact" className="contact">
               <div className="contactForm">
                 <h2>Skontaktuj się z nami</h2>
-                <img src={decoration}></img>
+                <img src={decoration} alt=""></img>
                 <form>
                     <div className="contactFormInput">
                     <label  className="singleInput singleInputFirst">
@@ -49,8 +47,8 @@ const HomeContact = () => {
             <footer className="footer">
                   <p>Copyright by Coders Lab</p>
                   <div className="footerIconBox">
-                    <img src={facebookIcon}></img>
-                    <img src={instagramIcon}></img>
+                    <img src={facebookIcon} alt="ikona Facebook"></img>
+                    <img src={instagramIcon} alt="ikona Instagram"></img>
                   </div>
                 </footer>
         </>

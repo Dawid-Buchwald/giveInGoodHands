@@ -54,7 +54,7 @@ const SignUp = () => {
                     </div>
                     <div className="homeSignUp">
                         <h2>Załóż konto</h2>
-                        <img className="headerDecoration" src={decoration}></img>
+                        <img className="headerDecoration" src={decoration} alt=""></img>
                         <form>
                             <div className="signUpForm">
                                 <div className="signUpFormInputSingle">

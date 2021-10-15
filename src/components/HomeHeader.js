@@ -38,7 +38,7 @@ const HomeHeader = () => {
                         <h1>
                             <span>Zacznij pomagać!</span><span>Oddaj Niechciane rzeczy w zaufane ręce.</span>
                         </h1>
-                        <img className="headerDecoration" src={decoration}></img>
+                        <img className="headerDecoration" src={decoration} alt=""></img>
                         <div className="headerButtonBox">
                             <button onClick={() => {history.push('/logowanie')}} className="headerButton headerButtonText">oddaj rzeczy</button>
                             <button onClick={() => {history.push('/logowanie')}} className="headerButton">zorganizuj zbiórkę</button>
